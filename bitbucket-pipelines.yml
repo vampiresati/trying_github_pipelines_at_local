@@ -1,0 +1,15 @@
+image: python:3.12
+
+pipelines:
+  default:
+    - step:
+        name: Show environment
+        script:
+          - echo "Hello from Bitbucket Pipeline"
+          - python --version
+
+    - step:
+        name: Run test
+        script:
+          - echo "Running tests..."
+          - python -c "print('TEST PASSED')"
