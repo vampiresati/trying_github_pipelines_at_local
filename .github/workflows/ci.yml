@@ -1,7 +1,6 @@
 name: Local CI Test
 
 on:
-  push:
   workflow_dispatch:
 
 jobs:
